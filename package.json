@@ -23,5 +23,8 @@
   "homepage": "https://github.com/jkup/react-postcss#readme",
   "dependencies": {
     "webpack": "^1.13.2"
+  },
+  "devDependencies": {
+    "standard": "^8.0.0"
   }
 }
