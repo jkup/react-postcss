@@ -1,12 +1,22 @@
 module.exports = {
-  entry: './entry.js',
+  entry: './src/index.jsx',
   output: {
     path: __dirname,
-    filename: 'bundle.js'
+    filename: 'build/script.js'
   },
   module: {
     loaders: [
-      { test: /\.css$/, loader: 'style!css' }
+      {
+        test: /\.(js|jsx)$/,
+        loader: 'babel',
+        query: {
+          presets: ['es2015', 'react']
+        }
+      },
+      {
+        test: /\.css$/,
+        loader: 'style!css!postcss'
+      }
     ]
   }
 }
