@@ -1,7 +1,9 @@
 import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
 
-class HelloWorld extends Component {
+import '../stylesheets/Main.scss'
+
+class MainComponent extends Component {
   render () {
     return (
       <div>
@@ -11,4 +13,4 @@ class HelloWorld extends Component {
   }
 }
 
-ReactDOM.render(<HelloWorld />, document.getElementById('root'))
+ReactDOM.render(<MainComponent />, document.getElementById('root'))

@@ -1,8 +1,8 @@
 module.exports = {
-  entry: './src/index.jsx',
+  entry: './src/scripts/index.jsx',
   output: {
     path: __dirname,
-    filename: 'build/script.js'
+    filename: 'build/js/script.js'
   },
   module: {
     loaders: [
@@ -14,8 +14,8 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/,
-        loader: 'style!css!postcss'
+        test: /\.scss$/,
+        loaders: ['style', 'css', 'sass']
       }
     ]
   }
