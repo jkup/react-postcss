@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
+import ReactDOM from 'react-dom'
 
-class componentName extends Component {
+class HelloWorld extends Component {
   render () {
     return (
       <div>
@@ -10,4 +11,4 @@ class componentName extends Component {
   }
 }
 
-export default componentName
+ReactDOM.render(<HelloWorld />, document.getElementById('root'))
