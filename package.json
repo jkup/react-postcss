@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/jkup/react-postcss/issues"
   },
-  "homepage": "https://github.com/jkup/react-postcss#readme"
+  "homepage": "https://github.com/jkup/react-postcss#readme",
+  "dependencies": {
+    "webpack": "^1.13.2"
+  }
 }
